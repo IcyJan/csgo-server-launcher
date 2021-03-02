@@ -274,8 +274,8 @@ function update {
 }
 
 function create {
-  # IP should never exist: RFC 5735 TEST-NET-2
-  if [ "$IP" = "198.51.100.0" ]
+  # GSLT has to be used now
+  if [ "$GSLT" = "" ]
   then
     echo "ERROR: You must configure the script before you create a server."
     exit 1
